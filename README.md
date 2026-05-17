@@ -24,7 +24,8 @@ c. Sinh viên đăng ký lớp học phần nào: Mối quan hệ N:N
 d. Sinh viên đăng kí môn học: Mối quan hệ N:N  
 e. Giảng viên dạy môn học: Mối quan hệ N:N  
 
-Vẽ sơ đồ ERD mô tả đầy đủ các mối quan hệ và ràng buộc (1–n, n–n)  
+3. Vẽ sơ đồ ERD mô tả đầy đủ các mối quan hệ và ràng buộc (1–n, n–n)
+
 ![Sơ đồ ERD](./sodo_erd.png)  
 
 4. Chỉ rõ khóa chính, khóa ngoại, và thuộc tính đa trị (nếu có)  
