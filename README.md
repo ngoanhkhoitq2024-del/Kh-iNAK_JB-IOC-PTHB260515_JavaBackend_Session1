@@ -1,36 +1,36 @@
-* Mô tả
-Một trường đại học cần quản lý việc đăng ký môn học của sinh viên. Hệ thống lưu trữ thông tin như sau:
+# **Hệ thống quản lý đơn hàng Thương mại điện tử**
+## **Mô tả**  
+***Một trang web bán hàng trực tuyến cần quản lý thông tin về:**  
 
-Sinh viên (Student): mã sinh viên, họ tên, ngày sinh, giới tính, email, khoa  
-Môn học (Course): mã môn, tên môn, số tín chỉ, khoa phụ trách  
-Giảng viên (Instructor): mã giảng viên, họ tên, học vị, email, khoa  
-Lớp học phần (Class_Section): mã lớp học phần, học kỳ, năm học, phòng học  
-Đăng ký (Enrollment): ghi lại việc sinh viên đăng ký lớp học phần cụ thể  
+Khách hàng (Customer): mã khách hàng, họ tên, email, số điện thoại, địa chỉ  
+Sản phẩm (Product): mã sản phẩm, tên sản phẩm, giá, mô tả, loại hàng  
+Đơn hàng (Order): mã đơn, ngày đặt hàng, tổng tiền, trạng thái  
+Chi tiết đơn hàng (OrderDetail): số lượng, đơn giá tại thời điểm mua  
+Nhân viên (Staff): mã nhân viên, họ tên, vị trí, ngày vào làm  
 
-1. Xác định các thực thể và thuộc tính chính  
-- Thực thể: Sinh viên  
- Thuộc tính: mã sinh viên, họ tên, ngày sinh, giới tính, email, khoa  
-- Thực thể: Môn học  
- Thuộc tính: mã môn, tên môn, số tín chỉ, khoa phụ trách  
-- Thực thể: Giảng viên  
- Thuộc tính: mã giảng viên, họ tên, học vị, email, khoa  
-- Thực thể: Lớp học phần  
- Thuộc tính: mã lớp học phần, học kỳ, năm học, phòng học  
+**1. Xác định các thực thể và thuộc tính chính**
+- Thực thể: Khách hàng (Customer)  
+ Thuộc tính: mã khách hàng, họ tên, email, số điện thoại, địa chỉ  
+- Thực thể: Sản phẩm (Product)  
+ Thuộc tính: mã sản phẩm, tên sản phẩm, giá, mô tả, loại hàng
+- Thực thể: Đơn hàng (Order)  
+ Thuộc tính: mã đơn, ngày đặt hàng, tổng tiền, trạng thái  
+- Thực thể: Chi tiết đơn hàng (OrderDetail)  
+ Thuộc tính: số lượng, đơn giá tại thời điểm mua  
+- Thực thể: Nhân viên (Staff)  
+ Thuộc tính: mã nhân viên, họ tên, vị trí, ngày vào làm  
 
-2. Xác định mối quan hệ giữa các thực thể,  
-a. Giảng viên dạy lớp học phần nào: Mối quan hệ 1:N  
-b. Lớp học phần thuộc về môn học: Mối quan hệ 1:N  
-c. Sinh viên đăng ký lớp học phần nào: Mối quan hệ N:N  
-d. Sinh viên đăng kí môn học: Mối quan hệ N:N  
-e. Giảng viên dạy môn học: Mối quan hệ N:N  
+**2. Xác định mối quan hệ giữa các thực thể, ví dụ:**  
+a. Khách hàng đặt nhiều đơn hàng: Mối quan hệ 1:N  
+b. Một đơn hàng chứa nhiều sản phẩm: Mối quan hệ N:N  
+c. Nhân viên xử lý đơn hàng: Mối quan hệ 1:N  
 
-3. Vẽ sơ đồ ERD mô tả đầy đủ các mối quan hệ và ràng buộc (1–n, n–n)
+**3. Vẽ sơ đồ ERD thể hiện các thực thể, mối quan hệ, và ràng buộc (1–n, n–n)**  
 
-![Sơ đồ ERD](./sodo_erd.png)  
+![Sơ đồ ERD](./erd.drawio.png)  
 
-4. Chỉ rõ khóa chính, khóa ngoại, và thuộc tính đa trị (nếu có)  
-Khóa chính: Mã Sinh Viên, Mã Môn, Mã Giảng viên  
-* Lớp học phần:  
-- Khóa chính: Mã lớp học phần  
-- Khóa ngoại: Mã môn, Mã giảng viên  
-
+**4. Ghi chú khóa chính (PK), khóa ngoại (FK) rõ ràng trong sơ đồ**  
+**Khóa chính:** Mã Khách hàng, Mã Sản phẩm, Mã Đơn, Mã Nhân viên  
+**Khóa ngoại:**
+- Bảng Đơn hàng: Mã khách hàng, Mã nhân viên  
+- Bảng Chi tiết đơn hàng: Mã đơn, Mã sản phẩm  
