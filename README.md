@@ -20,7 +20,7 @@ Lớp học phần (Class_Section): mã lớp học phần, học kỳ, năm h�
 2. Xác định mối quan hệ giữa các thực thể,  
 a. Giảng viên dạy lớp học phần nào: Mối quan hệ 1:N  
 b. Lớp học phần thuộc về môn học: Mối quan hệ 1:N  
-c. Sinh viên đăng ký lớp học phần nào: Mối quan hệ N:N 
+c. Sinh viên đăng ký lớp học phần nào: Mối quan hệ N:N  
 d. Sinh viên đăng kí môn học: Mối quan hệ N:N  
 e. Giảng viên dạy môn học: Mối quan hệ N:N  
 
