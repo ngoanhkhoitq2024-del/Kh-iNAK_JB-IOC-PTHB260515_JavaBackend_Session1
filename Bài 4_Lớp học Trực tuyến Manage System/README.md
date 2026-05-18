@@ -1,6 +1,6 @@
 # **Hệ thống Quản lý Đặt phòng Khách sạn**
 ## **Mô tả**  
-***MMột nền tảng học trực tuyến (như Coursera hoặc Udemy) cần quản lý:**  
+***Một nền tảng học trực tuyến (như Coursera hoặc Udemy) cần quản lý:**  
 
 **Người dùng (User):** mã người dùng, họ tên, email, mật khẩu, vai trò (student/instructor/admin)  
 **Khóa học (Course):** mã khóa, tên, mô tả, cấp độ, giá, ngày phát hành  
